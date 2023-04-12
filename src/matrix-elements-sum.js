@@ -18,10 +18,10 @@ const { NotImplementedError } = require("../lib");
  */
 function getMatrixElementsSum(matrix) {
   let sum = 0;
-
-  let columnCounter = matrix[0].length;
-
-  for (let i = 0; i < columnCounter; i++) {
+  
+  const columnCounter = matrix[0].length;
+  
+  for (let i = 0 ; i < columnCounter; i++) {
     for (let j = 0; j < matrix.length; j++) {
       if (matrix[j][i] === 0) {
         break;
