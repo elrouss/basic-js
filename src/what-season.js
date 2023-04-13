@@ -23,11 +23,11 @@ function getSeason(date) {
   const month = date.getMonth();
 
   const seasons = {
-    winter: [11, "Dec", 0, "Jan", 1, "Feb"],
-    spring: [2, "Mar", 3, "Apr", 4, "May"],
-    summer: [5, "June", 6, "July", 7, "Aug"],
-    autumn: [8, "Sept", 9, "Oct", 10, "Nov"],
-  };
+    winter: [11, 0, 1],
+    spring: [2, 3, 4],
+    summer: [5, 6, 7],
+    autumn: [8, 9, 10]
+  }
 
   for (let season in seasons) {
     if (seasons[season].includes(month)) return season;
